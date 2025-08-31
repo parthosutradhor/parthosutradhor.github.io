@@ -13,11 +13,11 @@
       margin: 0;
       background-color: #f0f4f8;
       text-align: center;
+      padding: 10px;
     }
     .container {
       width: 100%;
-      max-width: 500px;
-      padding: 20px;
+      max-width: 600px;
     }
     a.button {
       display: block;
@@ -28,7 +28,7 @@
       color: white;
       background-color: #007BFF;
       text-decoration: none;
-      border-radius: 10px;
+      border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
       transition: background-color 0.3s ease, transform 0.2s ease;
     }
@@ -40,6 +40,34 @@
       margin-bottom: 20px;
       font-size: 18px;
       color: #333;
+    }
+
+    /* 📱 Mobile devices */
+    @media (max-width: 480px) {
+      a.button {
+        font-size: 20px;
+        padding: 16px 0;
+        border-radius: 10px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+
+    /* 📲 Small tablets */
+    @media (min-width: 481px) and (max-width: 768px) {
+      a.button {
+        font-size: 21px;
+        padding: 18px 0;
+      }
+    }
+
+    /* 💻 Desktop */
+    @media (min-width: 769px) {
+      a.button {
+        font-size: 24px;
+        padding: 20px 0;
+      }
     }
   </style>
 </head>
