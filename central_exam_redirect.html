@@ -11,31 +11,42 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      background-color: #f9f9f9;
+      background-color: #f0f4f8;
       text-align: center;
     }
     .container {
-      max-width: 90%;
+      width: 100%;
+      max-width: 500px;
+      padding: 20px;
     }
     a.button {
-      display: inline-block;
-      padding: 12px 24px;
-      font-size: 18px;
+      display: block;
+      width: 100%;
+      padding: 18px 0;
+      font-size: 22px;
+      font-weight: bold;
       color: white;
       background-color: #007BFF;
       text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
     a.button:hover {
       background-color: #0056b3;
+      transform: scale(1.03);
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: #333;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <p>If you are not redirected automatically, click the button below:</p>
-    <a class="button" href="https://forms.gle/12XefqdRf9u652v49">Go to Form</a>
+    <a class="button" href="https://forms.gle/12XefqdRf9u652v49">🚀 Go to Form</a>
   </div>
 </body>
 </html>
